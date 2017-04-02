@@ -41,6 +41,14 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 ```
 
+#### 手动安装 
+除了上述两种自动安装，介绍一种手动安装
+```
+git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
+```
+安装完成之后退出当前会话重新打开一个终端窗口，你就可以见到这个彩色的提示了
+![](https://pic3.zhimg.com/6bc76a6bbbac6267781dc9e59496d2ce_b.jpg)
 ## Using Oh My Zsh
 
 ### Plugins
