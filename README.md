@@ -105,15 +105,15 @@ ZSH_THEME="random" # (...please let it be pie... please be some pie..)
 ```
 
 
-## Advanced Topics
+## 高级技巧：Advanced Topics
 
 If you're the type that likes to get their hands dirty, these sections might resonate.
 
-### Advanced Installation
+### 安装到自定义目录 Advanced Installation
 
 Some users may want to change the default path, or manually install Oh My Zsh.
 
-#### Custom Directory
+#### 自定义目录 Custom Directory
 
 The default location is `~/.oh-my-zsh` (hidden in your home directory)
 
@@ -123,7 +123,7 @@ If you'd like to change the install directory with the `ZSH` environment variabl
 export ZSH="$HOME/.dotfiles/oh-my-zsh"; sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
-#### Manual Installation
+#### 手动安装 Manual Installation
 
 ##### 1. Clone the repository:
 
@@ -131,13 +131,13 @@ export ZSH="$HOME/.dotfiles/oh-my-zsh"; sh -c "$(curl -fsSL https://raw.githubus
 git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 ```
 
-##### 2. *Optionally*, backup your existing `~/.zshrc` file:
+##### 2. 备份原始配置 *Optionally*, backup your existing `~/.zshrc` file:
 
 ```shell
 cp ~/.zshrc ~/.zshrc.orig
 ```
 
-##### 3. Create a new zsh configuration file
+##### 3. 新建私有的配置文件 Create a new zsh configuration file
 
 You can create a new zsh config file by copying the template that we have included for you.
 
@@ -145,24 +145,24 @@ You can create a new zsh config file by copying the template that we have includ
 cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
 ```
 
-##### 4. Change your default shell
+##### 4. 设置zsh为默认的shell命令 Change your default shell
 
 ```shell
 chsh -s /bin/zsh
 ```
 
-##### 5. Initialize your new zsh configuration
+##### 5. 初始化zsh配置文件 Initialize your new zsh configuration
 
 Once you open up a new terminal window, it should load zsh with Oh My Zsh's configuration.
 
-### Installation Problems
+### 自定制配置 Installation Problems
 
 If you have any hiccups installing, here are a few common fixes.
 
 * You _might_ need to modify your `PATH` in `~/.zshrc` if you're not able to find some commands after switching to `oh-my-zsh`.
 * If you installed manually or changed the install location, check the `ZSH` environment variable in `~/.zshrc`.
 
-### Custom Plugins and Themes
+### 自定义插件和主题 Custom Plugins and Themes
 
 If you want to override any of the default behaviors, just add a new file (ending in `.zsh`) in the `custom/` directory.
 
@@ -170,7 +170,7 @@ If you have many functions that go well together, you can put them as a `XYZ.plu
 
 If you would like to override the functionality of a plugin distributed with Oh My Zsh, create a plugin of the same name in the `custom/plugins/` directory and it will be loaded instead of the one in `plugins/`.
 
-## Getting Updates
+## 自动更新配置文件 Getting Updates
 
 By default, you will be prompted to check for upgrades every few weeks. If you would like `oh-my-zsh` to automatically upgrade itself without prompting you, set the following in your `~/.zshrc`:
 
@@ -184,7 +184,7 @@ To disable automatic upgrades, set the following in your `~/.zshrc`:
 DISABLE_AUTO_UPDATE=true
 ```
 
-### Manual Updates
+### 手动更新 Manual Updates
 
 If you'd like to upgrade at any point in time (maybe someone just released a new plugin and you don't want to wait a week?) you just need to run:
 
@@ -194,7 +194,7 @@ upgrade_oh_my_zsh
 
 Magic!
 
-## Uninstalling Oh My Zsh
+## 卸载 Uninstalling Oh My Zsh
 
 Oh My Zsh isn't for everyone. We'll miss you, but we want to make this an easy breakup.
 
