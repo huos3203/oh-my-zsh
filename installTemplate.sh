@@ -19,6 +19,7 @@ solarizedDIR=${root}/Util/solarized
 cd $solarizedDIR/vim-colors-solarized/colors
 #新建colors目录，拷贝solarized.vim到新目录中
 mkdir -p ~/.vim/colors && cp solarized.vim ~/.vim/colors/
+# echo换行符支持 -e 
 echo -e 'syntax enable\nset background=dark\ncolorscheme solarized' >> ~/.vimrc
 
 
