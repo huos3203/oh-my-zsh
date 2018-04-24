@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH='/Users/admin/Hexo/myblog/Util/oh-my-zsh'
+export ZSH='/Users/f/hsg/hexo/Util/oh-my-zsh'
 export GOPATH=$HOME/go
 PATH=$PATH:$HOME/.local/bin:$HOME/bin:$GOPATH/bin
 
