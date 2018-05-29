@@ -5,7 +5,9 @@
 export ZSH='/Users/f/hsg/hexo/Util/oh-my-zsh'
 export GOPATH=$HOME/go
 PATH=$PATH:$HOME/.local/bin:$HOME/bin:$GOPATH/bin
-
+##安装NVM
+export NVM_DIR="$HOME/.nvm"
+. "/usr/local/opt/nvm/nvm.sh"
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
