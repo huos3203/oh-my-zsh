@@ -2,12 +2,14 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH='/Users/admin/hsg/hexo/Util/oh-my-zsh'
+export ZSH=$HOME/hsg/hexo/Util/oh-my-zsh
 export GOPATH=$HOME/go
 PATH=$PATH:$HOME/.local/bin:$HOME/bin:$GOPATH/bin
 ##安装NVM
 export NVM_DIR="$HOME/.nvm"
 . "/usr/local/opt/nvm/nvm.sh"
+## 添加自定义脚本，全局使用
+. "$HOME/hsg/hexo/Util/tool/github-create.sh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
