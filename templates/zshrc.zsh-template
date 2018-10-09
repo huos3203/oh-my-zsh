@@ -10,6 +10,7 @@ export NVM_DIR="$HOME/.nvm"
 . "/usr/local/opt/nvm/nvm.sh"
 ## 添加自定义脚本，全局使用
 . "$HOME/hsg/hexo/Util/tool/github-create.sh"
+alias bfg="java -jar ~/Downloads/bfg-1.13.0.jar"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -84,7 +85,7 @@ HIST_STAMPS="mm/dd/yyyy"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 # 插件设置，如果添加太多启动速度会比较慢
-plugins=(git ruby autojump osx mvn)
+plugins=(git github gitignore ruby autojump osx mvn)
 
 # 剩下部分比较不常改动
 # User configuration
