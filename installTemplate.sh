@@ -7,7 +7,7 @@ root=`pwd`
 zshDIR=${root}/Util/oh-my-zsh
 template=$zshDIR/templates/zshrc.zsh-template
 echo $template
-sed -i '' "s#export ZSH=.*#export ZSH='$zshDIR'#g" $template
+#sed -i '' "s#export ZSH=.*#export ZSH='$zshDIR'#g" $template
 cd ~/
 pwd
 target=".zshrc"
