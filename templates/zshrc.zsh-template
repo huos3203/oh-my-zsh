@@ -10,6 +10,7 @@ export NVM_DIR="$HOME/.nvm"
 . "/usr/local/opt/nvm/nvm.sh"
 ## 添加自定义脚本，全局使用
 . "$HOME/hsg/hexo/Util/tool/github-create.sh"
+. "$HOME/hsg/hexo/Util/tool/jazzy-create.sh"
 alias bfg="java -jar ~/hsg/hexo/GitSubmodules/hsgTool/bfg-1.13.0.jar"
 alias pngquant="$HOME/hsg/hexo/GitSubmodules/hsgTool/pngquant/pngquant"
 
@@ -86,7 +87,7 @@ HIST_STAMPS="mm/dd/yyyy"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 # 插件设置，如果添加太多启动速度会比较慢
-plugins=(git github gitignore swiftpm ruby autojump osx mvn)
+plugins=(git github gitignore swiftpm chruby ruby autojump osx mvn)
 
 # 剩下部分比较不常改动
 # User configuration
@@ -123,8 +124,8 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export PATH="/usr/local/opt/qt/bin:$PATH"
 
-source $ZSH/oh-my-zsh.sh
-
 export MonkeyDevPath=/opt/MonkeyDev
 export MonkeyDevDeviceIP=
 export PATH=/opt/MonkeyDev/bin:$PATH
+
+source $ZSH/oh-my-zsh.sh
