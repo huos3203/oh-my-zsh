@@ -127,5 +127,8 @@ export PATH="/usr/local/opt/qt/bin:$PATH"
 export MonkeyDevPath=/opt/MonkeyDev
 export MonkeyDevDeviceIP=
 export PATH=/opt/MonkeyDev/bin:$PATH
+export JAVA_HOME="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home"
+export PATH="$PATH:$JAVA_HOME/bin"
+export CLASSPATH="$JAVA_HOME/lib"
 
 source $ZSH/oh-my-zsh.sh
