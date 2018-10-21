@@ -13,6 +13,7 @@ export NVM_DIR="$HOME/.nvm"
 . "$HOME/hsg/hexo/Util/tool/jazzy-create.sh"
 alias bfg="java -jar ~/hsg/hexo/GitSubmodules/hsgTool/bfg-1.13.0.jar"
 alias pngquant="$HOME/hsg/hexo/GitSubmodules/hsgTool/pngquant/pngquant"
+alias ngrok="$HOME/hsg/hexo/GitSubmodules/hsgTool/ngrok/ngrok"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
