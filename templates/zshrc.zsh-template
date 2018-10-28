@@ -17,7 +17,6 @@ alias bfg="java -jar $hsgToolDir/bfg-1.13.0.jar"
 alias pngquant="$hsgToolDir/pngquant/pngquant"
 ##穿墙工具
 alias ngrok="$hsgToolDir/ngrok/ngrok"
-##jenkins
 . "$hsgToolDir/jenkins/jenkins.sh"
 alias jenkins="$hsgToolDir/jenkins/jenkins.war"
 alias jenkins_cli="$hsgToolDir/jenkins/jenkins-cli.jar"
