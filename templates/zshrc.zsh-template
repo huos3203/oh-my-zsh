@@ -11,6 +11,7 @@ export NVM_DIR="$HOME/.nvm"
 ## 添加自定义脚本，全局使用
 . "$HOME/hsg/hexo/Util/tool/github-create.sh"
 . "$HOME/hsg/hexo/Util/tool/jazzy-create.sh"
+. "$HOME/hsg/hexo/Util/tool/autoreplace.sh"
 ## 工具
 hsgToolDir="$HOME/hsg/hexo/GitSubmodules/hsgTool"
 alias bfg="java -jar $hsgToolDir/bfg-1.13.0.jar"
