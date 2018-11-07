@@ -16,6 +16,8 @@ export NVM_DIR="$HOME/.nvm"
 hsgToolDir="$HOME/hsg/hexo/GitSubmodules/hsgTool"
 alias bfg="java -jar $hsgToolDir/bfg-1.13.0.jar"
 alias pngquant="$hsgToolDir/pngquant/pngquant"
+alias python2='/usr/bin/python'
+alias python3='/usr/local/bin/python3'
 ##穿墙工具
 alias ngrok="$hsgToolDir/ngrok/ngrok"
 . "$hsgToolDir/jenkins/jenkins.sh"
