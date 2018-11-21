@@ -12,6 +12,7 @@ export NVM_DIR="$HOME/.nvm"
 . "$HOME/hsg/hexo/Util/tool/github-create.sh"
 . "$HOME/hsg/hexo/Util/tool/jazzy-create.sh"
 . "$HOME/hsg/hexo/Util/tool/autoreplace.sh"
+. "$HOME/hsg/hexo/Util/tool/dmg-installer.sh"
 ## 工具
 hsgToolDir="$HOME/hsg/hexo/GitSubmodules/hsgTool"
 alias bfg="java -jar $hsgToolDir/bfg-1.13.0.jar"
@@ -29,6 +30,11 @@ alias ngrok="$hsgToolDir/ngrok/ngrok"
 . "$hsgToolDir/jenkins/jenkins.sh"
 alias jenkins="$hsgToolDir/jenkins/jenkins.war"
 alias jenkins_cli="$hsgToolDir/jenkins/jenkins-cli.jar"
+##open命令
+alias AppStore="open /Applications/App\ Store.app"
+alias hexo="open -a /Applications/Xcode.app $HOME/hsg/hexo/hexo.xcworkspace"
+
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
