@@ -32,7 +32,7 @@ alias jenkins="$hsgToolDir/jenkins/jenkins.war"
 alias jenkins_cli="$hsgToolDir/jenkins/jenkins-cli.jar"
 ##open命令
 alias AppStore="open /Applications/App\ Store.app"
-alias hexo="open -a /Applications/Xcode.app $HOME/hsg/hexo/hexo.xcworkspace"
+alias xhexo="open -a /Applications/Xcode.app $HOME/hsg/hexo/hexo.xcworkspace"
 
 
 # Set name of the theme to load --- if set to "random", it will
