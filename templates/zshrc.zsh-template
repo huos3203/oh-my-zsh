@@ -13,11 +13,12 @@ export NVM_DIR="$HOME/.nvm"
 . "$HOME/hsg/hexo/Util/tool/jazzy-create.sh"
 . "$HOME/hsg/hexo/Util/tool/autoreplace.sh"
 . "$HOME/hsg/hexo/Util/tool/dmg-installer.sh"
+alias cht.sh="$HOME/hsg/hexo/Util/tool/cht.sh"
 ## 工具
 hsgToolDir="$HOME/hsg/hexo/GitSubmodules/hsgTool"
 alias bfg="java -jar $hsgToolDir/bfg-1.13.0.jar"
 alias pngquant="$hsgToolDir/pngquant/pngquant"
-alias cheat="curl http://cheat.sh"
+
 alias python2='/usr/bin/python'
 alias python3='/usr/local/bin/python3'
 alias vim='/usr/local/bin/vim'
@@ -151,6 +152,7 @@ export PATH=/opt/MonkeyDev/bin:$PATH
 export JAVA_HOME="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home"
 export PATH="$PATH:$JAVA_HOME/bin"
 export CLASSPATH="$JAVA_HOME/lib"
+export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 
 source $ZSH/oh-my-zsh.sh
 eval "$(pyenv init -)"
