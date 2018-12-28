@@ -34,7 +34,11 @@ alias jenkins_cli="$hsgToolDir/jenkins/jenkins-cli.jar"
 ##open命令
 alias AppStore="open /Applications/App\ Store.app"
 alias xhexo="open -a /Applications/Xcode.app $HOME/hsg/hexo/hexo.xcworkspace"
-
+##手机端命令
+alias xmd="cd ~/storage/shared/XMind/workbook/"
+alias chcolor='/data/data/com.termux/files/home/.termux/colors.sh'
+alias chfont='/data/data/com.termux/files/home/.termux/fonts.sh'
+source /data/data/com.termux/files/home/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
