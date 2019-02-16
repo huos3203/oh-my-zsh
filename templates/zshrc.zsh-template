@@ -156,3 +156,9 @@ export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 
 source $ZSH/oh-my-zsh.sh
 eval "$(pyenv init -)"
+# zplugin 管理zsh插件工具
+source $HOME/hsg/hexo/Util/zplugin/zplugin.zsh
+zplugin ice wait"2" lucid as"program" pick"$ZPFX/bin/git-alias" make"PREFIX=$ZPFX" nocompile
+zplugin light tj/git-extras
+# git-hooks钩子策略插件
+export PATH="$HOME/hsg/hexo/Util/git-hooks:$PATH"
