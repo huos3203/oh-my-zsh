@@ -162,3 +162,4 @@ zplugin ice wait"2" lucid as"program" pick"$ZPFX/bin/git-alias" make"PREFIX=$ZPF
 zplugin light tj/git-extras
 # git-hooks钩子策略插件
 export PATH="$HOME/hsg/hexo/Util/git-hooks:$PATH"
+export PATH="$HOME/hsg/hexo/Gitsubmodules/hsgTool/GIT_TF:$PATH"
