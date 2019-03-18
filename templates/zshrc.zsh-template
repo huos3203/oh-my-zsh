@@ -109,7 +109,7 @@ HIST_STAMPS="mm/dd/yyyy"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 # 插件设置，如果添加太多启动速度会比较慢
-plugins=(git github gitignore xcode swiftpm react-native chruby ruby autojump osx mvn)
+plugins=(gas git github gitignore xcode swiftpm react-native chruby ruby autojump osx pod brew cloundapp forklift copydir copyfile cp mosh profiles rsync screen ssh-agent urltools vi-mode web-search docker heroku fasd jump pj wd pip python gem bundler rake rebenv rvm)
 
 # 剩下部分比较不常改动
 # User configuration
