@@ -64,9 +64,15 @@ ZSH_THEME="ys" #"avit""agnoster" #"robbyrussell"
 # 如果不想要自动更新，可以取消注释下面的一行
 # DISABLE_AUTO_UPDATE="true"
 
+# Uncomment the following line to automatically update without prompting.
+# DISABLE_UPDATE_PROMPT="true"
+
 # Uncomment the following line to change how often to auto-update (in days).
 # 自动更新的时间间隔，单位是天，这里设置 30 天更新一次
 # export UPDATE_ZSH_DAYS=13
+
+# Uncomment the following line if pasting URLs and other text is messed up.
+# DISABLE_MAGIC_FUNCTIONS=true
 
 # Uncomment the following line to disable colors in ls.
 # 如果不想要 ls 命令输出带颜色，可以取消注释下面的一行
@@ -128,9 +134,6 @@ plugins=(gas git github gitignore xcode swiftpm react-native chruby ruby autojum
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
-
-# ssh
-# export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
