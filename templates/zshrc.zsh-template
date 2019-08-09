@@ -15,7 +15,7 @@ export NVM_DIR="$HOME/.nvm"
 . "$HOME/hsg/hexo/Util/tool/dmg-installer.sh"
 alias cht.sh="$HOME/hsg/hexo/Util/tool/cht.sh"
 ## 工具
-hsgToolDir="$HOME/hsg/hexo/GitSubmodules/hsgTool"
+export hsgToolDir="$HOME/hsg/hexo/GitSubmodules/hsgTool"
 alias bfg="java -jar $hsgToolDir/bfg-1.13.0.jar"
 alias pngquant="$hsgToolDir/pngquant/pngquant"
 alias pngTo="python $hsgToolDir/pngquant/compresspng.py "
