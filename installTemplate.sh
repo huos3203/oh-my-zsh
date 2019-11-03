@@ -22,8 +22,8 @@ mkdir -p ~/.vim/colors && cp solarized.vim ~/.vim/colors/
 # echo换行符支持 -e
 echo -e 'syntax enable\nset background=dark\ncolorscheme solarized' >> ~/.vimrc
 
-
-
+## 启动zsh工具
+chsh -s /bin/zsh
 
 
 #官方教程安装即目录路径
