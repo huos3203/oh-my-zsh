@@ -25,7 +25,6 @@ echo -e 'syntax enable\nset background=dark\ncolorscheme solarized' >> ~/.vimrc
 ## 启动zsh工具
 chsh -s /bin/zsh
 
-
 #官方教程安装即目录路径
 #zsh=`pwd`/Util/oh-my-zsh/templates/zshrc.zsh-template
 #cp $zsh ~/.zshrc  #新建私有的配置文件

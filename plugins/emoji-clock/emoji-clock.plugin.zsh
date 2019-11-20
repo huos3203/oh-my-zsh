@@ -2,7 +2,7 @@
 #          FILE: emoji-clock.plugin.zsh
 #   DESCRIPTION: The current time with half hour accuracy as an emoji symbol.
 #                Inspired by Andre Torrez' "Put A Burger In Your Shell"
-#                https://notes.torrez.org/2013/04/put-a-burger-in-your-shell.html
+#                http://notes.torrez.org/2013/04/put-a-burger-in-your-shell.html
 #        AUTHOR: Alexis Hildebrandt (afh[at]surryhill.net)
 #       VERSION: 1.0.0
 # -----------------------------------------------------------------------------

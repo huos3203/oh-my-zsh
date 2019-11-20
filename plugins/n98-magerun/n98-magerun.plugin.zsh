@@ -2,8 +2,7 @@
 # FILE: n98-magerun.plugin.zsh
 # DESCRIPTION: oh-my-zsh n98-magerun plugin file. Adapted from composer plugin 
 # AUTHOR: Andrew Dwyer (andrewrdwyer at gmail dot com)
-# AUTHOR: Jisse Reitsma (jisse at yireo dot com)
-# VERSION: 1.1.0
+# VERSION: 1.0.0
 # ------------------------------------------------------------------------------
 
 # n98-magerun basic command completion
@@ -25,18 +24,11 @@ _n98_magerun () {
 
 compdef _n98_magerun n98-magerun.phar
 compdef _n98_magerun n98-magerun
-compdef _n98_magerun n98-magerun2.phar
-compdef _n98_magerun n98-magerun2
 
 # Aliases
 alias n98='n98-magerun.phar'
 alias mage='n98-magerun.phar'
-alias magerun='n98-magerun.phar'
-
-alias n98-2='n98-magerun2.phar'
-alias mage2='n98-magerun2.phar'
-alias magerun2='n98-magerun2.phar'
+alias magefl='n98-magerun.phar cache:flush'
 
 # Install n98-magerun into the current directory
-alias mage-get='wget https://files.magerun.net/n98-magerun.phar'
-alias mage2-get='wget https://files.magerun.net/n98-magerun2.phar'
+alias mage-get='wget https://raw.github.com/netz98/n98-magerun/master/n98-magerun.phar'

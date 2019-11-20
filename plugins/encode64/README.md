@@ -20,10 +20,10 @@ Alias plugin for encoding or decoding using `base64` command
    )
    ```
 
-2. Restart your terminal session or restart the shell:
+2. Restart your terminal session or reload configuration by running:
 
    ```sh
-   exec zsh
+   source ~/.zshrc
    ```
 
 ## Usage and examples

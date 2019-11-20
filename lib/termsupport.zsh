@@ -21,7 +21,7 @@ function title {
       print -Pn "\e]2;$2:q\a" # set window name
       print -Pn "\e]1;$1:q\a" # set tab name
       ;;
-    screen*|tmux*)
+    screen*)
       print -Pn "\ek$1:q\e\\" # set screen hardstatus
       ;;
     *)
@@ -75,9 +75,8 @@ function omz_termsupport_preexec {
   title '$CMD' '%100>...>$LINE%<<'
 }
 
-autoload -U add-zsh-hook
-add-zsh-hook precmd omz_termsupport_precmd
-add-zsh-hook preexec omz_termsupport_preexec
+precmd_functions+=(omz_termsupport_precmd)
+preexec_functions+=(omz_termsupport_preexec)
 
 
 # Keep Apple Terminal.app's current working directory updated
@@ -100,7 +99,7 @@ if [[ "$TERM_PROGRAM" == "Apple_Terminal" ]] && [[ -z "$INSIDE_EMACS" ]]; then
   }
 
   # Use a precmd hook instead of a chpwd hook to avoid contaminating output
-  add-zsh-hook precmd update_terminalapp_cwd
+  precmd_functions+=(update_terminalapp_cwd)
   # Run once to get initial cwd set
   update_terminalapp_cwd
 fi

@@ -1,3 +1,6 @@
+# ZSH Git Prompt Plugin from:
+# https://github.com/olivierverdier/zsh-git-prompt
+
 __GIT_PROMPT_DIR="${0:A:h}"
 
 ## Hook function definitions
@@ -20,10 +23,9 @@ function precmd_update_git_vars() {
     fi
 }
 
-autoload -U add-zsh-hook
-add-zsh-hook chpwd chpwd_update_git_vars
-add-zsh-hook precmd precmd_update_git_vars
-add-zsh-hook preexec preexec_update_git_vars
+chpwd_functions+=(chpwd_update_git_vars)
+precmd_functions+=(precmd_update_git_vars)
+preexec_functions+=(preexec_update_git_vars)
 
 
 ## Function definitions

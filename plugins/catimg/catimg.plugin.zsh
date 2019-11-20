@@ -4,7 +4,7 @@
 #                                                                              #
 # Ouput the content of an image to the stdout using the 256 colors of the      #
 # terminal.                                                                    #
-# GitHub: https://github.com/posva/catimg                                      #
+# Github: https://github.com/posva/catimg                                      #
 ################################################################################
 
 

@@ -61,8 +61,6 @@ transfer() {
    
     # cat output link
     cat $tmpfile
-    # add newline
-    echo
 
     # cleanup
     rm -f $tmpfile

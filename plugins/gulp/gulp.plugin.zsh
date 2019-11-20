@@ -11,7 +11,7 @@
 
 #
 # André König
-# GitHub: https://github.com/akoenig
+# Github: https://github.com/akoenig
 # Twitter: https://twitter.com/caiifr
 #
 
@@ -19,11 +19,11 @@
 # Grabs all available tasks from the `gulpfile.js`
 # in the current directory.
 #
-function _gulp_completion {
+function $$gulp_completion {
     compls=$(gulp --tasks-simple 2>/dev/null)
 
     completions=(${=compls})
     compadd -- $completions
 }
 
-compdef _gulp_completion gulp
+compdef $$gulp_completion gulp

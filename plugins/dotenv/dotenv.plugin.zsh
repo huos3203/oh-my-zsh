@@ -1,13 +1,13 @@
 source_env() {
-  if [[ -f $ZSH_DOTENV_FILE ]]; then
+  if [[ -f .env ]]; then
     # test .env syntax
-    zsh -fn $ZSH_DOTENV_FILE || echo "dotenv: error when sourcing '$ZSH_DOTENV_FILE' file" >&2
+    zsh -fn .env || echo 'dotenv: error when sourcing `.env` file' >&2
 
     if [[ -o a ]]; then
-      source $ZSH_DOTENV_FILE
+      source .env
     else
       set -a
-      source $ZSH_DOTENV_FILE
+      source .env
       set +a
     fi
   fi
@@ -15,9 +15,5 @@ source_env() {
 
 autoload -U add-zsh-hook
 add-zsh-hook chpwd source_env
-
-if [[ -z $ZSH_DOTENV_FILE ]]; then
-    ZSH_DOTENV_FILE=.env
-fi
 
 source_env

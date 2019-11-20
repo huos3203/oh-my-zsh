@@ -32,13 +32,16 @@ alias wwdc8swift="$hsgToolDir/WWDCDownloader/wwdc2018.swift"
 ##穿墙工具
 alias ngrok="$hsgToolDir/ngrok/ngrok"
 . "$hsgToolDir/jenkins/jenkins.sh"
-jenkins="$hsgToolDir/jenkins/jenkins.war"
+alias jenkins="$hsgToolDir/jenkins/jenkins.war"
 alias jenkins_cli="$hsgToolDir/jenkins/jenkins-cli.jar"
 ##open命令
-#alias conda="$HOME/anaconda3/condabin/conda"
 alias AppStore="open /Applications/App\ Store.app"
 alias xhexo="open -a /Applications/Xcode.app $HOME/hsg/hexo/hexo.xcworkspace"
-
+##手机端命令
+alias xmd="cd ~/storage/shared/XMind/workbook/"
+alias chcolor='/data/data/com.termux/files/home/.termux/colors.sh'
+alias chfont='/data/data/com.termux/files/home/.termux/fonts.sh'
+source /data/data/com.termux/files/home/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -68,15 +71,9 @@ ZSH_THEME="ys" #"avit""agnoster" #"robbyrussell"
 # 如果不想要自动更新，可以取消注释下面的一行
 # DISABLE_AUTO_UPDATE="true"
 
-# Uncomment the following line to automatically update without prompting.
-# DISABLE_UPDATE_PROMPT="true"
-
 # Uncomment the following line to change how often to auto-update (in days).
 # 自动更新的时间间隔，单位是天，这里设置 30 天更新一次
 # export UPDATE_ZSH_DAYS=13
-
-# Uncomment the following line if pasting URLs and other text is messed up.
-# DISABLE_MAGIC_FUNCTIONS=true
 
 # Uncomment the following line to disable colors in ls.
 # 如果不想要 ls 命令输出带颜色，可以取消注释下面的一行
@@ -139,6 +136,9 @@ plugins=(tmux gas git github gitignore xcode swiftpm react-native chruby ruby au
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
+# ssh
+# export SSH_KEY_PATH="~/.ssh/rsa_id"
+
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
@@ -190,4 +190,3 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
-

@@ -10,35 +10,25 @@ if [ -d ~/.oh-my-zsh ]; then
 fi
 
 echo "Looking for original zsh config..."
-ZSHRC_ORIG=~/.zshrc.pre-oh-my-zsh
-if [ -e "$ZSHRC_ORIG" ]; then
-  echo "Found $ZSHRC_ORIG -- Restoring to ~/.zshrc"
+if [ -f ~/.zshrc.pre-oh-my-zsh ] || [ -h ~/.zshrc.pre-oh-my-zsh ]; then
+  echo "Found ~/.zshrc.pre-oh-my-zsh -- Restoring to ~/.zshrc";
 
-  if [ -e ~/.zshrc ]; then
-    ZSHRC_SAVE=~/.zshrc.omz-uninstalled-$(date +%Y-%m-%d_%H-%M-%S)
-    echo "Found ~/.zshrc -- Renaming to ${ZSHRC_SAVE}"
-    mv ~/.zshrc "${ZSHRC_SAVE}"
+  if [ -f ~/.zshrc ] || [ -h ~/.zshrc ]; then
+    ZSHRC_SAVE=".zshrc.omz-uninstalled-$(date +%Y%m%d%H%M%S)";
+    echo "Found ~/.zshrc -- Renaming to ~/${ZSHRC_SAVE}";
+    mv ~/.zshrc ~/"${ZSHRC_SAVE}";
   fi
 
-  mv "$ZSHRC_ORIG" ~/.zshrc
+  mv ~/.zshrc.pre-oh-my-zsh ~/.zshrc;
 
-  echo "Your original zsh config was restored."
-fi
-
-if hash chsh >/dev/null 2>&1; then
-  if [ -f ~/.shell.pre-oh-my-zsh ]; then
-    old_shell=$(cat ~/.shell.pre-oh-my-zsh)
+  echo "Your original zsh config was restored. Please restart your session."
+else
+  if hash chsh >/dev/null 2>&1; then
+    echo "Switching back to bash"
+    chsh -s /bin/bash
   else
-	old_shell=/bin/bash
-  fi
-  echo "Switching your shell back to '$old_shell':"
-  if chsh -s "$old_shell"; then
-    rm -f ~/.shell.pre-oh-my-zsh
-  else
-    echo "Could not change default shell. Change it manually by running chsh"
-	echo "or editing the /etc/passwd file."
+    echo "You can edit /etc/passwd to switch your default shell back to bash"
   fi
 fi
 
 echo "Thanks for trying out Oh My Zsh. It's been uninstalled."
-echo "Don't forget to restart your terminal!"

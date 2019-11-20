@@ -10,12 +10,6 @@ Current as of Terraform v0.11.7
 
 ### Usage
 
-To use it, add `terraform` to the plugins array of your `~/.zshrc` file:
-
-```shell
-plugins=(... terraform)
-```
-
  * Type `terraform` into your prompt and hit `TAB` to see available completion options
 
 ### Expanding ZSH prompt with current Terraform workspace name
@@ -23,6 +17,7 @@ plugins=(... terraform)
 If you want to get current Terraform workspace name in your ZSH prompt open
 your .zsh-theme file and in a chosen place insert:
 
-```shell
-PROMPT=$'%{$fg[white]%}$(tf_prompt_info)%{$reset_color%} '
+```
+$FG[045]\
+$(tf_prompt_info)\
 ```

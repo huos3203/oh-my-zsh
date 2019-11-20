@@ -109,7 +109,7 @@ alias wptm='wp theme mod'
 alias wptp='wp theme path'
 alias wpts='wp theme search'
 alias wptst='wp theme status'
-alias wptu='wp theme update'
+alias wptu='wp theme updatet'
 
 # Transient
 
